@@ -1,0 +1,25 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/aizarcabrera/turing/1module/5th_week/projects/engima/lib/enigma.rb": [
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/aizarcabrera/turing/1module/5th_week/projects/engima/test/enigma_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1541094247
+  }
+}
