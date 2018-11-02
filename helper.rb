@@ -2,8 +2,9 @@ require 'simplecov'
 SimpleCov.start
 
 require 'minitest/autorun'
-require 'minitest/pride'
+require 'minitest/emoji'
 require 'date'
 require 'pry'
 require './lib/enigma'
-require './test/enigma_test.rb'
+require './lib/key'
+require './lib/offset'
