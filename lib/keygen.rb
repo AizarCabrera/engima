@@ -1,4 +1,5 @@
 require 'pry'
 
-class Key
+class KeyGen
+
 end
