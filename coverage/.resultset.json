@@ -52,22 +52,21 @@
         0,
         null,
         null,
-        null,
         1,
-        3,
-        3,
-        3,
-        12,
+        0,
+        0,
+        0,
+        0,
         null,
-        3,
+        0,
         null,
         null,
         null
       ],
-      "/Users/aizarcabrera/turing/1module/5th_week/projects/engima/lib/offset.rb": [
+      "/Users/aizarcabrera/turing/1module/5th_week/projects/engima/lib/offsetgen.rb": [
 
       ]
     },
-    "timestamp": 1541183492
+    "timestamp": 1541196426
   }
 }

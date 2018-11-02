@@ -7,7 +7,6 @@ class KeyGen
     @key = key_maker
   end
 
-
   def key_maker
     random = rand(00000..99999).to_s.rjust(5, '0').split("")
     pair = []
