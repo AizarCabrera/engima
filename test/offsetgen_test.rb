@@ -11,7 +11,7 @@ class OffsetGenTest < Minitest::Test
   def test_it_can_get_todays_date
     offset_gen = OffsetGen.new
 
-    assert_instance_of Time, offset_gen.date_maker
+    assert_instance_of String, offset_gen.today
   end
 
 end
