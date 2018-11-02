@@ -12,7 +12,8 @@ class KeyGenTest < Minitest:: Test
     key_gen = KeyGen.new
 
     assert_equal 4,key_gen.key_maker.length
-    assert_instance_of Array,key_gen.key
+    assert_instance_of Array,key_gen.key_maker
+    assert_instance_of Integer,key_gen.key_maker.first
   end
 
 end
