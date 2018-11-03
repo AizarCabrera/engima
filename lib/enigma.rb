@@ -35,8 +35,10 @@ class Enigma
                  " "]
   end
 
-  
-
-
+  def get_new(position)
+     number = position / @alphabet.length
+     new_position = position - @alphabet.length * number
+     @alphabet[new_position]
+  end
 
 end

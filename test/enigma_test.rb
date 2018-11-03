@@ -21,10 +21,10 @@ class EnigmaTest < Minitest::Test
     assert_instance_of Integer, e.shift.shift_maker(0)
   end
 
-  def test_it_gets_the_position_of_a_letter__with_position_number_greater_than_78
+  def test_it_gets_a_letter__with_position_number_greater_than_alphabet
     e = Enigma.new([21, 57, 82, 80])
 
-    assert_equal 'k', e.get_position(79)
+    assert_equal ' ', e.get_new(80)
   end
 
 end
