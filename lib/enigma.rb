@@ -4,7 +4,7 @@ class Enigma
 
   attr_reader :alphabet, :shift
 
-  def initialize(shift = ShiftGen.new.shift_maker(index))
+  def initialize(shift = ShiftGen.new)
     @shift    = shift
     @alphabet = ["a",
                  "b",
@@ -34,6 +34,8 @@ class Enigma
                  "z",
                  " "]
   end
+
+  
 
 
 
