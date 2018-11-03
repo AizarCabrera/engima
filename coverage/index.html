@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-03T10:52:02-06:00">2018-11-03T10:52:02-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-03T10:58:56-06:00">2018-11-03T10:58:56-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">64.29%</span></span>
+    (<span class="covered_percent"><span class="red">75.0%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.85
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>42</b> relevant lines. 
-    <span class="green"><b>27</b> lines covered</span> and
-    <span class="red"><b>15</b> lines missed </span>
+    <b>48</b> relevant lines. 
+    <span class="green"><b>36</b> lines covered</span> and
+    <span class="red"><b>12</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#2ccbaa96307e3637a0d68547d8cbb0ea3a36459f" class="src_link" title="lib/enigma.rb">lib/enigma.rb</a></td>
-        <td class="red strong">70.0 %</td>
-        <td>46</td>
-        <td>10</td>
-        <td>7</td>
-        <td>3</td>
-        <td>1.5</td>
+        <td class="green strong">100.0 %</td>
+        <td>53</td>
+        <td>16</td>
+        <td>16</td>
+        <td>0</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -109,11 +109,11 @@
         <div class="source_table" id="2ccbaa96307e3637a0d68547d8cbb0ea3a36459f">
   <div class="header">
     <h3>lib/enigma.rb</h3>
-    <h4><span class="red">70.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -348,20 +348,20 @@
           <code class="ruby">  def get_new(position)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
-          
+        <li class="covered" data-hits="2" data-linenumber="39">
+          <span class="hits">2</span>
           
           <code class="ruby">     number = position / @alphabet.length</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
-          
+        <li class="covered" data-hits="2" data-linenumber="40">
+          <span class="hits">2</span>
           
           <code class="ruby">     new_position = position - @alphabet.length * number</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
-          
+        <li class="covered" data-hits="2" data-linenumber="41">
+          <span class="hits">2</span>
           
           <code class="ruby">     @alphabet[new_position]</code>
         </li>
@@ -378,19 +378,61 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  </code>
+          <code class="ruby">  def encrypt(message)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    encrypted = &#39;&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    message.each_char.with_index do |letter, i|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      position = @alphabet.index(letter) + @shift[i % 4]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      encrypted += get_new(position)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    encrypted</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">end</code>

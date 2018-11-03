@@ -41,6 +41,13 @@ class Enigma
      @alphabet[new_position]
   end
 
-  
+  def encrypt(message)
+    encrypted = ''
+    message.each_char.with_index do |letter, i|
+      position = @alphabet.index(letter) + @shift[i % 4]
+      encrypted += get_new(position)
+    end
+    encrypted
+  end
 
 end
