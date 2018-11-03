@@ -9,4 +9,7 @@ class ShiftGen
     @offset = offset
   end
 
+
+
+  # binding.pry
 end

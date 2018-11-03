@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-02T19:01:55-06:00">2018-11-02T19:01:55-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-02T19:13:55-06:00">2018-11-02T19:13:55-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.6
+         2.11
        </span>
     </span> hits/line)
   </h2>
@@ -67,7 +67,7 @@
         <td>11</td>
         <td>10</td>
         <td>1</td>
-        <td>1.9</td>
+        <td>2.6</td>
       </tr>
       
       <tr>
@@ -77,17 +77,17 @@
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>2.4</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#b71201f204422b8bef48c2f73b648efda21e1ae9" class="src_link" title="lib/shiftgen.rb">lib/shiftgen.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
+        <td>15</td>
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.7</td>
       </tr>
       
     </tbody>
@@ -439,26 +439,26 @@
           <code class="ruby">  def key_maker</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="12">
+          <span class="hits">3</span>
           
           <code class="ruby">    random = rand(00000..99999).to_s.rjust(5, &#39;0&#39;).split(&quot;&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
           
           <code class="ruby">    pair = []</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="14">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="14">
+          <span class="hits">3</span>
           
           <code class="ruby">    4.times do |index|</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="15">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="12" data-linenumber="15">
+          <span class="hits">12</span>
           
           <code class="ruby">      pair &lt;&lt; (random[index] + random[index + 1]).to_i</code>
         </li>
@@ -469,8 +469,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="17">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
           
           <code class="ruby">    pair</code>
         </li>
@@ -554,8 +554,8 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
           
           <code class="ruby">    @offsets = last_four_digits</code>
         </li>
@@ -578,8 +578,8 @@
           <code class="ruby">  def date</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="12">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="12">
+          <span class="hits">9</span>
           
           <code class="ruby">    Time.new</code>
         </li>
@@ -602,8 +602,8 @@
           <code class="ruby">  def square_date</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">    (date.day.to_s + date.month.to_s + (date.year % 100).to_s).to_i ** 2</code>
         </li>
@@ -626,20 +626,20 @@
           <code class="ruby">  def last_four_digits</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="20">
+          <span class="hits">3</span>
           
           <code class="ruby">    square_date_string  = square_date.to_s</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
           
           <code class="ruby">    last_four = square_date_string[-4..-1]</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
           
           <code class="ruby">    last_four.chars.map(&amp;:to_i)</code>
         </li>
@@ -723,14 +723,14 @@
           <code class="ruby">  def initialize(key = KeyGen.new.key_maker, offset = OffsetGen.new.offsets)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
           
           <code class="ruby">    @key    = key</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="9">
+          <span class="hits">3</span>
           
           <code class="ruby">    @offset = offset</code>
         </li>
@@ -748,6 +748,24 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # binding.pry</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
