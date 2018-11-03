@@ -18,7 +18,7 @@ class Enigma
   def encrypt(message)
     encrypted = ''
     message.each_char.with_index do |letter, i|
-      position = @alphabet.index(letter) + @shift.shift_maker(i % 4)
+      position = @alphabet.index(letter) + @shift[i % 4]
       encrypted += get_new(position)
     end
     encrypted
@@ -27,7 +27,7 @@ class Enigma
   def decrypt(message)
     decrypted = ''
     message.each_char.with_index do |letter, i|
-      position = @alphabet.index(letter) - @shift.shift_maker(i % 4)
+      position = @alphabet.index(letter) - @shift[i % 4]
       decrypted += get_new(position)
     end
     decrypted

@@ -51,5 +51,4 @@ class EnigmaTest < Minitest::Test
     assert_equal 'hello world', e.decrypt('bhmkicxnloe')
   end
 
-
 end
