@@ -11,6 +11,7 @@ class ShiftGen
 
   def shift_maker(index)
     @key[index] + @offset[index]
+    # @key.zip(@offset).map{|v| v.reduce(:+) }
   end
 
 end
