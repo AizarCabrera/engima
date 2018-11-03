@@ -9,7 +9,9 @@ class ShiftGen
     @offset = offset
   end
 
-
+  def shift_maker(index)
+    @key[index] + @offset[index]
+  end
 
   # binding.pry
 end
