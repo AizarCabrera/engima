@@ -1,4 +1,4 @@
-require 'pry'
+require './helper'
 
 class KeyGen
 
