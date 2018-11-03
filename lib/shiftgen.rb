@@ -13,5 +13,4 @@ class ShiftGen
     @key[index] + @offset[index]
   end
 
-  # binding.pry
 end
