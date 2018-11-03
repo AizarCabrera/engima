@@ -8,6 +8,13 @@ class KeyGenTest < Minitest:: Test
     assert_instance_of KeyGen, key_gen
   end
 
+  def test_it_can_generate_random_number_for_key
+    key_gen = KeyGen.new
+
+    assert_instance_of Array, key_gen.random
+    refute_equal 99999, key_gen.random.join.to_i
+  end
+
   def test_it_can_generate_a_random_key_as_array
     key_gen = KeyGen.new
 

@@ -21,6 +21,34 @@ class EnigmaTest < Minitest::Test
     assert_instance_of Integer, e.shift.shift_maker(0)
   end
 
+  def test_it_gets_a_letter__with_position_number_greater_than_alphabet
+    e = Enigma.new([21, 57, 82, 80])
 
+    assert_equal ' ', e.get_new(80)
+  end
+
+  def test_it_can_encrypt_one_character
+    e = Enigma.new([21, 57, 82, 80])
+
+    assert_equal 'l', e.encrypt('r')
+  end
+
+  def test_it_can_decrypt_one_character
+    e = Enigma.new([21, 57, 82, 80])
+
+    assert_equal 'r', e.decrypt('l')
+  end
+
+  def test_it_can_encrypt_one_message
+    e = Enigma.new([21, 57, 82, 80])
+
+    assert_equal 'bhmkicxnloe', e.encrypt('hello world')
+  end
+
+  def test_it_can_decrypt_one_message
+    e = Enigma.new([21, 57, 82, 80])
+
+    assert_equal 'hello world', e.decrypt('bhmkicxnloe')
+  end
 
 end
