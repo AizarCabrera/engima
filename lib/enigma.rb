@@ -41,4 +41,6 @@ class Enigma
      @alphabet[new_position]
   end
 
+  
+
 end

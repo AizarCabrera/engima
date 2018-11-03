@@ -24,7 +24,13 @@ class EnigmaTest < Minitest::Test
   def test_it_gets_a_letter__with_position_number_greater_than_alphabet
     e = Enigma.new([21, 57, 82, 80])
 
-    assert_equal ' ', e.get_new(80)
+    assert_equal ' ', e.encrypt(80)
+  end
+
+  def test_it_can_encrypt_one_character
+    e = Enigma.new([21, 57, 82, 80])
+
+    assert_equal 's', e.encrypt('z')
   end
 
 end
