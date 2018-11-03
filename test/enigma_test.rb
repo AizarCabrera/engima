@@ -39,10 +39,10 @@ class EnigmaTest < Minitest::Test
     assert_equal 'r', e.decrypt('l')
   end
 
-  def test_it_can_encrypt_one_word
+  def test_it_can_encrypt_one_message
     e = Enigma.new([21, 57, 82, 80])
 
-    assert_equal 'tjiu', e.encrypt('hello')
+    assert_equal 'bhmki', e.encrypt('hello world')
   end
 
 
