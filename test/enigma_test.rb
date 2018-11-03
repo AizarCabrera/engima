@@ -42,7 +42,13 @@ class EnigmaTest < Minitest::Test
   def test_it_can_encrypt_one_message
     e = Enigma.new([21, 57, 82, 80])
 
-    assert_equal 'bhmki', e.encrypt('hello world')
+    assert_equal 'bhmkicxnloe', e.encrypt('hello world')
+  end
+
+  def test_it_can_decrypt_one_message
+    e = Enigma.new([21, 57, 82, 80])
+
+    assert_equal 'hello world', e.decrypt('bhmkicxnloe')
   end
 
 
