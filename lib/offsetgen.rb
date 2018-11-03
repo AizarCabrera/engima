@@ -8,12 +8,12 @@ class OffsetGen
     @offsets = last_four_digits
   end
 
-  def today_date
+  def date
     Time.new
   end
 
   def square_date
-    (today_date.day.to_s + today_date.month.to_s + (today_date.year % 100).to_s).to_i ** 2
+    (date.day.to_s + date.month.to_s + (date.year % 100).to_s).to_i ** 2
   end
 
   def last_four_digits

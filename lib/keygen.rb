@@ -1,6 +1,7 @@
 require 'pry'
 
 class KeyGen
+
   attr_reader :key
 
   def initilalize
