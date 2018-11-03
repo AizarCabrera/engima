@@ -33,4 +33,10 @@ class EnigmaTest < Minitest::Test
     assert_equal 'l', e.encrypt('r')
   end
 
+  def test_it_can_decrypt_one_character
+    e = Enigma.new([21, 57, 82, 80])
+
+    assert_equal 'r', e.decrypt('l')
+  end
+
 end

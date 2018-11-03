@@ -50,4 +50,5 @@ class Enigma
     encrypted
   end
 
+
 end
