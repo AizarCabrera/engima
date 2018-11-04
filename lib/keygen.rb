@@ -1,6 +1,7 @@
 require './helper'
 
 class KeyGen
+
   attr_reader :key
 
   def initialize(key)
