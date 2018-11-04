@@ -3,7 +3,7 @@ require './helper'
 class OffsetGenTest < Minitest::Test
 
   def setup
-  @offset_gen = OffsetGen.new
+  @offset_gen = OffsetGen.new('')
   end
 
   def test_it_exists
