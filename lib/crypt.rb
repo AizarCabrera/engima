@@ -24,7 +24,7 @@ class Crypt
       position = @alphabet.index(letter) + @shift.shift_maker(i % 4)
       encrypted += get_new(position)
     end
-    encrypted
+    encryption_return(encrypted)
   end
 
   def decrypt
@@ -33,6 +33,22 @@ class Crypt
       position = @alphabet.index(letter) - @shift.shift_maker(i % 4)
       decrypted += get_new(position)
     end
-    decrypted
+    decryption_return(decrypted)
+  end
+
+  def encryption_return(encryption)
+    {
+      encryption: encryption,
+      key: @key,
+      date: @offset,
+    }
+  end
+
+  def decryption_return(decryption)
+    {
+      decryption: decryption,
+      key: @key,
+      date: @offset,
+    }
   end
 end
