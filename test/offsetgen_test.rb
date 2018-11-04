@@ -24,4 +24,9 @@ class OffsetGenTest < Minitest::Test
     assert_equal [9, 9, 2, 4], @offset_gen.last_four_digits('041118')
   end
 
+  def test_it_can_get_last_four_digits_of_square_date_if_no_offset_is_provided
+    assert_instance_of Array, @offset_gen.set_offset((Time.new))
+    assert_instance_of Integer, @offset_gen.set_offset((Time.new)).first
+  end
+
 end

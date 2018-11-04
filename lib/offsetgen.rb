@@ -16,6 +16,14 @@ class OffsetGen
     offset.to_i ** 2
   end
 
+  def format_offset(offset)
+    if offset.empty?
+      set_offset(get_date(Time.new))
+    else
+      set_offset(offset)
+    end
+  end
+
   def last_four_digits(offset)
     square_date_string  = square_date(offset).to_s
     last_four = square_date_string[-4..-1]
@@ -26,12 +34,5 @@ class OffsetGen
     last_four_digits(offset)
   end
 
-  def format_offset(offset)
-    if offset.empty?
-      set_offset(get_date(Time.new))
-    else
-      set_offset(offset)
-    end
-  end
 
 end
