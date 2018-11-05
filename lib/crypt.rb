@@ -20,7 +20,6 @@ class Crypt
   def encrypt
     encrypted = ''
     message.each_char.with_index do |letter, i|
-      # binding.pry
       position = @alphabet.index(letter) + @shift.shift_maker(i % 4)
       encrypted += get_new(position)
     end
@@ -39,8 +38,8 @@ class Crypt
   def encryption_return(encryption)
     {
       encryption: encryption,
-      key: @key,
-      date: @offset,
+      key: @key.key.join,
+      date: @offset.offset.join,
     }
   end
 

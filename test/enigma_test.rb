@@ -19,10 +19,10 @@ class EnigmaTest < Minitest::Test
   # #   assert_equal ' ', @e.get_new(80)
   # # end
   #
-  # def test_it_can_encrypt_one_character
-  #   assert_equal 'l', @e.encrypt('r',"12345","041118")
-  # end
-  #
+  def test_it_can_encrypt_one_character
+    assert_equal ({:encryption=>"l", :key=>"12345", :date=>"9924"}), @e.encrypt('r',"12345","041118")
+  end
+
   # def test_it_can_decrypt_one_character
   #   assert_equal 'r', @e.decrypt('l',"12345","041118")
   # end
