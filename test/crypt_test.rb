@@ -23,5 +23,10 @@ class CryptTest < Minitest::Test
     assert_equal 'p', @c.get_new(96)
   end
 
+  def test_it_can_encrypt_one_message_without_arguments
+    assert_equal ({:encryption=>"bjugi", :key=>"12345", :offset=>"9924"}), @c.encrypt
+  end
+
+
 
 end
