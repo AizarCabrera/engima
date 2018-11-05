@@ -10,7 +10,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -117,12 +117,12 @@
         1,
         null,
         1,
-        4,
-        4,
+        0,
+        0,
         null,
         null,
         1,
-        6,
+        0,
         null,
         null,
         null
@@ -167,7 +167,7 @@
         null
       ]
     },
-    "timestamp": 1541379374
+    "timestamp": 1541379730
   },
   "MiniTest": {
     "coverage": {
