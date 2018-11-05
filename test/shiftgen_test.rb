@@ -17,10 +17,10 @@ class ShiftGenTest < Minitest::Test
     assert_equal [9, 0, 1, 2], @shiftgen.offset
   end
 
-  # def test_it_can_create_a_shift
-  #   assert_instance_of Integer, @shiftgen.shift_maker(3)
-  # end
-  #
+  def test_it_can_create_a_shift
+    assert_instance_of Integer, @shiftgen.shift_maker(3)
+  end
+
   # def test_it_can_create_several_shifts
   #   assert_instance_of Integer, @shiftgen.shift_maker(0)
   #   assert_equal 21, shiftgen.shift_maker(0)
