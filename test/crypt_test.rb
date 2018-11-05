@@ -31,4 +31,7 @@ class CryptTest < Minitest::Test
     assert_equal ({:decryption=>"n cqu", :key=>"12345", :offset=>"9924"}), @c.decrypt
   end
 
+  def test_it_encryption_return_can_return_a_hash
+    assert_instance_of Hash, @c.encryption_return('')
+  end
 end
