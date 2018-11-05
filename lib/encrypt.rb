@@ -8,7 +8,7 @@ message = text.strip
 
 e = Enigma.new
 key = '12345'
-date = "041118"
+date = '051118'
 
 output = File.open(ARGV[1], "w")
 

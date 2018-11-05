@@ -14,4 +14,4 @@ decrypt_hash = e.decrypt(message, key, offset)
 output.write(decrypt_hash[:decryption])
 output.close
 
-puts "'Created #{ARGV[1]}' with the key '#{decrypt_hash[:key]}' and the date '#{decrypt_hash[:date]}'"
+puts "'Created #{ARGV[1]}' with the key '#{decrypt_hash[:key]}' and the offset '#{decrypt_hash[:offset]}'"
