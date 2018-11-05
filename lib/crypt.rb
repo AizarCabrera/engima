@@ -5,10 +5,10 @@ class Crypt
 
   def initialize(message, key, offset)
     @alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
-    @message = message
-    @key = KeyGen.new(key)
-    @offset = OffsetGen.new(offset)
-    @shift = ShiftGen.new(@key.key_maker, @offset.offset)
+    @message  = message
+    @key      = KeyGen.new(key)
+    @offset   = OffsetGen.new(offset)
+    @shift    = ShiftGen.new(@key.key_maker, @offset.offset)
   end
 
   def get_new(position)
@@ -39,7 +39,7 @@ class Crypt
     {
       encryption: encryption,
       key: @key.key.join,
-      date: @offset.offset.join,
+      offset: @offset.offset.join,
     }
   end
 
@@ -47,7 +47,7 @@ class Crypt
     {
       decryption: decryption,
       key: @key.key.join,
-      date: @offset.offset.join,
+      offset: @offset.offset.join,
     }
   end
 end
