@@ -2,8 +2,6 @@ require './helper'
 
 class Enigma
 
-  attr_reader :alphabet
-
   def encrypt(message, key = '', offset = '')
     c = Crypt.new(message, key, offset)
     c.encrypt

@@ -1,6 +1,7 @@
 require './helper'
 
 class Crypt
+
   attr_reader :message, :key, :offset, :shift, :alphabet
 
   def initialize(message, key, offset)
@@ -27,11 +28,7 @@ class Crypt
   end
 
   def encryption_return(encryption)
-    {
-      encryption: encryption,
-      key: @key.key.join,
-      offset: @offset.offset.join,
-    }
+    {encryption: encryption, key: @key.key.join, offset: @offset.offset.join}
   end
 
   def decrypt
@@ -44,10 +41,6 @@ class Crypt
   end
 
   def decryption_return(decryption)
-    {
-      decryption: decryption,
-      key: @key.key.join,
-      offset: @offset.offset.join,
-    }
+    {decryption: decryption, key: @key.key.join, offset: @offset.offset.join}
   end
 end
