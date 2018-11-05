@@ -26,6 +26,14 @@ class Crypt
     encryption_return(encrypted)
   end
 
+  def encryption_return(encryption)
+    {
+      encryption: encryption,
+      key: @key.key.join,
+      offset: @offset.offset.join,
+    }
+  end
+
   def decrypt
     decrypted = ''
     message.each_char.with_index do |letter, i|
@@ -33,14 +41,6 @@ class Crypt
       decrypted += get_new(position)
     end
     decryption_return(decrypted)
-  end
-
-  def encryption_return(encryption)
-    {
-      encryption: encryption,
-      key: @key.key.join,
-      offset: @offset.offset.join,
-    }
   end
 
   def decryption_return(decryption)

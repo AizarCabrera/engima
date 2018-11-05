@@ -1,5 +1,4 @@
 require './helper'
-require './lib/crypt'
 
 class Enigma
 
