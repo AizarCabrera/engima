@@ -21,7 +21,7 @@ class ShiftGenTest < Minitest::Test
     assert_instance_of Integer, @shiftgen.shift_maker(3)
   end
 
-  def test_it_can_create_several_shifts
+  def test_it_can_create_several_shifts_with_index_passed
     assert_instance_of Integer, @shiftgen.shift_maker(0)
     assert_equal 21, @shiftgen.shift_maker(0)
     assert_equal 34, @shiftgen.shift_maker(1)
