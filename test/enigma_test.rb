@@ -31,8 +31,8 @@ class EnigmaTest < Minitest::Test
     assert_equal ({:encryption=>"bjugieejlqm", :key=>"12345", :offset=>"9924"}), @e.encrypt('hello world',"12345","041118")
   end
 
-  # def test_it_can_decrypt_one_message
-  #   assert_equal 'hello world', @e.decrypt('bjugieejlqm',"12345","041118")
-  # end
+  def test_it_can_decrypt_one_message
+    assert_equal ({:decryption=>"hello world", :key=>"12345", :offset=>"9924"}), @e.decrypt('bjugieejlqm',"12345","041118")
+  end
 
 end
