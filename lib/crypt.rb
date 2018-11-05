@@ -46,8 +46,8 @@ class Crypt
   def decryption_return(decryption)
     {
       decryption: decryption,
-      key: @key,
-      date: @offset,
+      key: @key.key.join,
+      date: @offset.offset.join,
     }
   end
 end
