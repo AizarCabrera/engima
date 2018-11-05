@@ -7,12 +7,6 @@
         1,
         null,
         1,
-        null,
-        1,
-        6,
-        null,
-        null,
-        1,
         2,
         2,
         null,
@@ -113,6 +107,7 @@
         1,
         null,
         1,
+        null,
         1,
         null,
         1,
@@ -139,10 +134,6 @@
         null,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
         4,
         null,
         null,
@@ -156,10 +147,6 @@
         null,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
         4,
         null,
         null
@@ -170,14 +157,9 @@
         1,
         null,
         1,
-        6,
+        5,
         null,
         null,
-        1,
-        1,
-        null,
-        null,
-        1,
         1,
         1,
         null,
@@ -303,7 +285,7 @@
         null
       ]
     },
-    "timestamp": 1541385463
+    "timestamp": 1541445999
   },
   "MiniTest": {
     "coverage": {
@@ -348,7 +330,7 @@
         null,
         null,
         1,
-        11,
+        21,
         null,
         null,
         null
@@ -407,9 +389,9 @@
         null,
         null,
         1,
-        11,
-        11,
-        11,
+        21,
+        21,
+        21,
         null,
         null,
         1,
@@ -432,9 +414,8 @@
         1,
         1,
         1,
-        null,
-        11,
-        11,
+        21,
+        21,
         null,
         1,
         null,
@@ -449,6 +430,6 @@
         null
       ]
     },
-    "timestamp": 1541386725
+    "timestamp": 1541443681
   }
 }
