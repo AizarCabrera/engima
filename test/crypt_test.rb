@@ -27,6 +27,8 @@ class CryptTest < Minitest::Test
     assert_equal ({:encryption=>"bjugi", :key=>"12345", :offset=>"9924"}), @c.encrypt
   end
 
-
+  def test_it_can_decrypt_one_message_without_arguments
+    assert_equal ({:decryption=>"n cqu", :key=>"12345", :offset=>"9924"}), @c.decrypt
+  end
 
 end
