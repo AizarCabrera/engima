@@ -12,8 +12,8 @@ date = "041118"
 
 output = File.open(ARGV[1], "w")
 
-output.write(e.encrypt(message, key, date))
-
+encrypt_hash = e.encrypt(message, key, date)
+output.write(encrypt_hash[:encryption])
 output.close
 
 puts "'Created #{ARGV[1]}' with the key '#{key}' and the date '#{date}'"

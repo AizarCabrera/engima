@@ -11,9 +11,7 @@ offset = ARGV[3]
 output = File.open(ARGV[1], "w")
 
 decrypt_hash = e.decrypt(message, key, offset)
-
 output.write(decrypt_hash[:decryption])
-
 output.close
 
 puts "'Created #{ARGV[1]}' with the key '#{decrypt_hash[:key]}' and the date '#{decrypt_hash[:date]}'"
