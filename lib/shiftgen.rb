@@ -5,7 +5,7 @@ class ShiftGen
   attr_reader :key, :offset
 
   def initialize(key, offset)
-    @key = key
+    @key    = key
     @offset = offset
   end
 
