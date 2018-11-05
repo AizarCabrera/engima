@@ -9,12 +9,14 @@ class ShiftGenTest < Minitest::Test
   def test_it_exists
     assert_instance_of ShiftGen, @shiftgen
   end
-  #
-  # def test_it_has_correct_attributes
-  #   assert_instance_of Array, @shiftgen.key
-  #   assert_instance_of Array, @shiftgen.offset
-  # end
-  #
+
+  def test_it_has_correct_attributes
+    assert_instance_of Array, @shiftgen.key
+    assert_instance_of Array, @shiftgen.offset
+    assert_equal [12, 34, 56, 78], @shiftgen.key
+    assert_equal [9, 0, 1, 2], @shiftgen.offset
+  end
+
   # def test_it_can_create_a_shift
   #   assert_instance_of Integer, @shiftgen.shift_maker(3)
   # end
