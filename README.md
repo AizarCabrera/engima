@@ -1,7 +1,7 @@
 # engima
 In this project you’ll use Ruby to build a tool for cracking an encryption algorithm.
 
-Functionality               []
-Object Oriented Programming []
-Test Driven Development     []
-Version Control             []
+Functionality               [3]
+Object Oriented Programming [3]
+Test Driven Development     [3]
+Version Control             [3]
